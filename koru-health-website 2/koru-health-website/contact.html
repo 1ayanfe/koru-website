@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KORU Health | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/koru-logo.png" alt="The KORU Health logo" class="logo">
+            <h1>KORU Health</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h2>Contact Us</h2>
+            <p>Use the form below to practise sending a message.</p>
+        </section>
+        <section class="form-section">
+            <form id="contactForm">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+
+                <button type="submit" class="button">Submit</button>
+                <p id="formFeedback" aria-live="polite"></p>
+            </form>
+            <p class="small-note">This is a demonstration form. It checks the information but does not send or store messages.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> KORU Health. Student project.</p>
+        <p>This website provides general information and is not a substitute for professional medical advice.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

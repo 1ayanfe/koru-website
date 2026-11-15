@@ -1,0 +1,197 @@
+/* Basic styles for the KORU Health website */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5ef;
+    color: #26352b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #10251c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo-area h1 {
+    font-size: 25px;
+    margin: 5px;
+}
+
+nav {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #31513d;
+}
+
+.welcome {
+    background-color: #dce8d9;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #244a35;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #426b4f;
+}
+
+.content-section {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.page-heading {
+    text-align: center;
+    background-color: #dce8d9;
+    padding: 35px 15px;
+}
+
+.page-heading h2 {
+    margin: 0;
+}
+
+.card-section {
+    padding: 25px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 950px;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #d6ded4;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: #244a35;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
+
+#formFeedback {
+    font-weight: bold;
+}
+
+.small-note {
+    font-size: 13px;
+    color: #555;
+}
+
+footer {
+    background-color: #10251c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+/* Tablet screen */
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phone screen */
+@media (max-width: 550px) {
+    .logo-area {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h2 {
+        font-size: 25px;
+    }
+
+    .content-section,
+    .form-section {
+        margin: 15px;
+        padding: 18px;
+    }
+}
